@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial uno</title>
+    <link id="hoja-estilos" rel="stylesheet" href="Estilo1.css">
+</head>
+
+<body>
+    <div class="contenedor_principal">
+        <header class="encabezado">
+            <h1 class="titulo-principal">Primer Parcial</h1>
+            <nav class="navegacion-estilos">
+                <button class="boton-estilo" onclick="cambiarEstilo('Estilo1.css')">Estilo 1</button>
+                <button class="boton-estilo" onclick="cambiarEstilo('Estilo2.css')">Estilo 2</button>
+                <button class="boton-estilo" onclick="sinEstilos()">Sin Estilos</button>
+            </nav>
+        </header>
+
+        <main class="contenido-principal">
+            <div class="contenedor-formulario">
+                <h2 class="titulo-formulario">Iniciar Sesión</h2>
+                <form class="formulario-login" id="formulario-login">
+                    <div class="grupo-campo">
+                        <label for="usuario" class="etiqueta-campo">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" class="campo-entrada" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="contrasena" class="etiqueta-campo">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" class="campo-entrada" required>
+                    </div>
+
+                    <button type="submit" class="boton-ingresar">Ingresar</button>
+                </form>
+
+                <div id="mensaje-resultado" class="mensaje-oculto"></div>
+            </div>
+        </main>
+
+        <footer class="pie-pagina">
+            <p class="texto-pie">Fernando Guerra - Parcial 1</p>
+        </footer>
+    </div>
+
+    <script src="Funciones.js"></script>
+</body>
+
+</html>
